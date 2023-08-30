@@ -29,7 +29,7 @@ render() {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Northwind App</NavbarBrand>
+        <NavbarBrand href="/">AKU App</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -41,7 +41,7 @@ render() {
                 GitHub
               </NavLink>
             </NavItem>
-            <CartSummary cart={this.props.cart} />
+            <CartSummary removeFromCart={this.props.removeFromCart} cart={this.props.cart} />
           </Nav>
         </Collapse>
       </Navbar>
